@@ -14,6 +14,7 @@ public class FogOfWar : MonoBehaviour
         var temp = new List<CustomRenderTextureUpdateZone>();
         customRenderTexture.GetUpdateZones(temp);
         customRenderTextureUpdateZones = temp.ToArray();
+        customRenderTexture.Initialize();
     }
 
     // Update is called once per frame
